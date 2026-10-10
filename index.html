@@ -73,13 +73,6 @@
         line-height: 1.35;
       }
 
-      h1::after {
-        content: "_";
-        display: inline-block;
-        margin-left: 0.12em;
-        animation: blink 1s steps(1) infinite;
-      }
-
       .contact {
         display: flex;
         align-items: center;
@@ -136,23 +129,11 @@
         background: var(--ink);
         border: 1px solid var(--ink);
         text-decoration: none;
-        transition: background 160ms ease, color 160ms ease;
-      }
-
-      .button:hover,
-      .button:focus-visible {
-        color: var(--ink);
-        background: transparent;
       }
 
       .button:focus-visible,
       .email a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 
-      @keyframes blink { 50% { opacity: 0; } }
-
-      @media (prefers-reduced-motion: reduce) {
-        h1::after { animation: none; }
-      }
     </style>
   </head>
   <body>
