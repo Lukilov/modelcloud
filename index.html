@@ -43,6 +43,7 @@
         color-scheme: light;
         --ink: #111;
         --paper: #f7f6f2;
+        --accent: #2457ff;
       }
 
       * { box-sizing: border-box; }
@@ -99,6 +100,8 @@
         letter-spacing: 0.02em;
         line-height: 1.35;
       }
+
+      .domain-name { color: var(--accent); }
 
       .contact {
         display: flex;
@@ -170,7 +173,7 @@
       <a href="https://modellab.si/">modellab.si</a>
     </nav>
     <main>
-      <h1>modelcloud.si is for sale.</h1>
+      <h1><span class="domain-name">modelcloud.si</span> is for sale.</h1>
       <p class="intro">
         A memorable Slovenian domain for AI, machine learning, cloud computing,
         data, SaaS, and technology projects.
